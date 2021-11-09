@@ -19,7 +19,7 @@ var swiper = new Swiper('.swiper', {
   });
 
 // 流れ星をランダムの位置で表示
-$(function(){
+jQuery(function(){
   if (window.matchMedia( '(min-width: 600px)' ).matches) {
   setInterval(function(){
     var width = parseInt($('.mission').css('width'));
@@ -27,8 +27,8 @@ $(function(){
     var val_x = Math.round( Math.random()* width ) - 250;
     var val_y = Math.round( Math.random()* height );
 
-    $('.star_box').css('top', val_y);
-    $('.star_box').css('left', val_x);
+    jQuery('.star_box').css('top', val_y);
+    jQuery('.star_box').css('left', val_x);
   },2000);
 }
 });
